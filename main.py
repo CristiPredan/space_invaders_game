@@ -420,13 +420,13 @@ while run:
             alien_shoot = 700
         if time_left == 30:
             power_fx.play()        
-        if time_left <= 30 and time_left > 26:
+        if time_left <= 30 and time_left > 26 and game_over == 0:
             draw_text('Ship is losing power!', font20, yellow, int(screen_width / 2 + 120), int(screen_height / 2 - 340)) 
         if time_left < 16:
             alien_shoot = 300
         if time_left == 15:
             power_fx.play()        
-        if time_left <= 15 and time_left > 11:
+        if time_left <= 15 and time_left > 11  and game_over == 0:
             draw_text('Ship lost main engine!', font20, red, int(screen_width / 2 + 100), int(screen_height / 2 - 340))    
         if time_left == 0:
             game_over = -1
