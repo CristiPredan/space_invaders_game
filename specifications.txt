@@ -1,24 +1,31 @@
-SPACE INVADERS
+****** SPACE ATTACK ******
 
-REPORT
-- la finalizare You win la mai putin de 10 secunde e OK
-- la finalizare Game Over la 0 secunde e OK
+Space Attack Arcade Game is a common space invaders type of game, with added features and time limit.
 
-
-BUGS
-- la finalizare You win la mai mult de 10 secunde scade gresit 5 puncte dupa terminarea jocului
-- la Game over la mai mult de 10 secunde scade gresit 5 secunde dupa terminarea jocului.
-- OK fereastra jocului trebuie sa se inchida doar la apasarea tastei Q nu la orice miscare sau tasta
+Before working on this code you need Python 3 version on your computer. Then go in the Terminal to the space_attack_game directory and run $ - python game.py command.
 
 
-FEATURES
-- adaugare bonus daca termin inainte de 25 secunde
-- posibilitate de restartq
-- adaugare grad militar la scor in functie de rezultat
+EXE FILE WITH CX_FREEZE
 
+The Python code can be transfrom easily into an executable file, witch is more interesting and easier to access the game.
 
-IMPROVEMENTS
-- modificare grafica aliens
-- modificare racheta
-- modificare efecte sonore la explozii
-- asezare grafica corespunzatoare 
+NOTICE: The .exe file works for Windows users only
+
+In order to use cx_freeze you must install the programm. Heare are the most common instalation versions:
+
+@@In a virtual environment, install by issuing the command:
+
+pip install --upgrade cx_Freeze
+
+@@Without virtual environment, depending on the system:
+
+python -m pip install --upgrade cx_Freeze
+or
+
+python3 -m pip install --upgrade cx_Freeze
+
+After the instalation, update the code in the setup.py file. 
+
+NOTICE: The built version sends all the images and files in the root directory. If in the initial file structure you have assets/image.png type of path, then, in the built version, you must recreate the assets directory, and move all the necessary elements inside it.
+
+Once the updating is ready, run $ - python setup.py build in the terminal and this is it!

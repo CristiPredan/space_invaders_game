@@ -22,7 +22,7 @@ screen_width = 950
 screen_height = 700
 
 screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption('Space Invanders')
+pygame.display.set_caption('Space Attack')
 
 
 # load sounds
@@ -61,7 +61,7 @@ last_alien_shot = pygame.time.get_ticks()
 
 
 # declare colors
-red = (200, 16, 16)
+red = (200, 16, 46)
 green = (46, 139, 87)
 white = (255, 255, 255)
 yellow = (234, 169, 63)
@@ -129,8 +129,6 @@ def game_intro():
                     quit()
 
         screen.blit(bg2, (0, 0))
-        # draw_text('Welcome to Space Invaders', font40, white, int(screen_width / 2 - 150), int(screen_height / 2 + 20))
-        # draw_text('Press "Q" to Quit the game', font30, white, int(screen_width / 2 - 200), int(screen_height / 2 + 80))
         pygame.display.update()
         clock.tick(5000)
 
@@ -156,7 +154,6 @@ class Spaceship(pygame.sprite.Sprite):
             speed = 4
         if time_left < 15:
             speed = 1
-        # set a cooldown variable
         cooldown = 500  # milliseconds
         game_over = 0
 
@@ -462,6 +459,5 @@ while run:
                 pygame.init()
 
     # def gameOverScreen():
-
     pygame.display.update()
 pygame.quit()
